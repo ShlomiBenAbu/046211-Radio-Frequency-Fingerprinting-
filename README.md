@@ -8,36 +8,46 @@ This task explores the application of transformer models to the identification o
 
 # Model architecture
 ## 1. Input Layer
-- Input Data: Raw input data (likely RF fingerprint signals) is fed into the model.
-- Embedding Layer: Converts input tokens into dense vector representations.
-- Positional Encoding: Adds positional information to embeddings since Transformers don’t have inherent sequence order.
+- A fully connected (linear) layer expands the feature space.
+- Transformation: 1024 → 2048
 
-## 2. Self-Attention Mechanism (Multi-Head Self-Attention)
-- Attention Score Computation:
-  -The model computes similarity scores between tokens using the Scaled Dot-Product Attention formula:
-    ![image](https://github.com/user-attachments/assets/6a141bf1-4297-4756-99bb-aa7d32d3db1a)
-- Multi-Head Attention:
-    - Splits Q, K, and V into multiple heads to capture diverse relationships.
-- Concatenation & Linear Transformation:
-    - The attention heads are merged back and passed through a final linear layer.
-    - 
-## 3. Add & Norm 1 (Residual Connection & Normalization)
-- Skip Connection 1: The input is added back to the output from the Multi-Head Self-Attention.
-- Layer Normalization 1: Normalizes the output for stability.
+## 2. Transformer Block
+-  Multi-Head Self-Attention (MHA)
+- Feed-Forward Network (FFN)
+- Layer Normalization & Residual Connections
+  
+## 3.  Average Pooling
+- A downsampling layer that reduces dimensionality while preserving the most useful information.
+ 
+## 4. Batch Normalization
+- Normalizes feature distributions across different samples in a batch.
+
+## 5. Dropout Layer
+- Dropout Probability: 30%
+- Randomly deactivates neurons during training.
 - 
-## 4. Feedforward Network
-- Fully Connected Layer (Dense Layer):
-    - Typically two linear layers with an activation function in between.
-- ReLU Activation: Introduces non-linearity.
-- Output of Feedforward Network: Transforms input dimensions for better feature representation.
+## 6. Fully Connected 
+- Transformation: 1024 → 128
+- A dense (fully connected) layer that compresses features from 1024 dimensions to 128
 
-## 5. Add & Norm 2 (Residual Connection & Normalization)
-- Skip Connection 2: The output from the Feedforward Network is added to its input.
-- Layer Normalization 2: Ensures stability.
+## 7. Dropout Layer
+- Dropout Probability: 20%
+- Randomly deactivates neurons during training.
 
-## 6. Output Layer
-- Final Dense Layer: Projects the transformed features into output classes or values.
-- Softmax Activation: Converts raw scores into probabilities for classification.
+## 8. Fully Connected Layer
+- Transformation: 128 → 128
+- Another dense layer that maintains the 128-dimensional feature space.
+
+## 9. Dropout Layer
+- Dropout Probability: 20%
+- Randomly deactivates neurons during training.
+
+## 10. Output Layer
+- Transformation: 128 → Num_Classes
+- A fully connected (linear) layer that maps learned representations to the number of classes.
+- Activation Function:
+- Softmax (for multi-class classification)
+- Sigmoid (for binary classification)
 
 # Prerequisites
 |Library         | Version |
