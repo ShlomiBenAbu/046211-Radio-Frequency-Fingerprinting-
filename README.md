@@ -47,7 +47,6 @@ This task explores the application of transformer models to the identification o
 - A fully connected (linear) layer that maps learned representations to the number of classes.
 - Activation Function:
 - Softmax (for multi-class classification)
-- Sigmoid (for binary classification)
 
 # Prerequisites
 |Library         | Version |
