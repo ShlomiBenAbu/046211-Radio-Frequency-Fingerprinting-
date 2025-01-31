@@ -1,4 +1,4 @@
-# 046211-Radio-Frequency-Fingerprinting-
+# 046211-Radio-Frequency-Fingerprinting
 # Introduction
 In the domain of wireless communications, the identification of devices based on their unique Radio Frequency (RF) fingerprints has emerged as a critical tool for enhancing network security, device authentication, and spectrum management. RF fingerprints arise due to hardware imperfections inherent in the manufacturing process of wireless devices. These imperfections introduce subtle, device-specific variations in transmitted signals, which can be leveraged for identification purposes.
 
@@ -57,6 +57,11 @@ This task explores the application of transformer models to the identification o
 - A fully connected (linear) layer that maps learned representations to the number of classes.
 - Activation Function:
 - Softmax (for multi-class classification)
+
+# Results
+
+
+# Run The Model
 
 # Prerequisites
 |Library         | Version |
