@@ -17,51 +17,25 @@ This task explores the application of transformer models to the identification o
 '32PSK', '16APSK', '32QAM', 'FM', 'GMSK', '32APSK', 'OQPSK', '8ASK', 'BPSK', '8PSK', 'AM-SSB-SC', '4ASK', '16PSK', '64APSK', '128QAM', '128APSK','AM-DSB-SC', 'AM-SSB-WC', '64QAM', 'QPSK', '256QAM', 'AM-DSB-WC', 'OOK', '16QAM'
 
 # Model architecture
-## 1. Input Layer
-- A fully connected (linear) layer expands the feature space.
-- Transformation: 1024 → 2048
-
-## 2. Transformer Block
--  Multi-Head Self-Attention (MHA)
-- Feed-Forward Network (FFN)
-- Layer Normalization & Residual Connections
+- Fully Connected
+- Transformer Block
+- Average Pooling 
+- Batch Normalization
+- Dropout Layer
+- Fully Connected 
+- Dropout Layer
+- Fully Connected Layer
+- Dropout Layer
+- fully connected + Softmax
   
-## 3.  Average Pooling
-- A downsampling layer that reduces dimensionality while preserving the most useful information.
- 
-## 4. Batch Normalization
-- Normalizes feature distributions across different samples in a batch.
-
-## 5. Dropout Layer
-- Dropout Probability: 30%
-- Randomly deactivates neurons during training.
-- 
-## 6. Fully Connected 
-- Transformation: 1024 → 128
-- A dense (fully connected) layer that compresses features from 1024 dimensions to 128
-
-## 7. Dropout Layer
-- Dropout Probability: 20%
-- Randomly deactivates neurons during training.
-
-## 8. Fully Connected Layer
-- Transformation: 128 → 128
-- Another dense layer that maintains the 128-dimensional feature space.
-
-## 9. Dropout Layer
-- Dropout Probability: 20%
-- Randomly deactivates neurons during training.
-
-## 10. Output Layer
-- Transformation: 128 → Num_Classes
-- A fully connected (linear) layer that maps learned representations to the number of classes.
-- Activation Function:
-- Softmax (for multi-class classification)
-
 # Results
 
 
-# Run The Model
+# Run the Model
+1. Download the dataset **DEEPSIG DATASET: RADIOML 2018.01A (NEW)**, specifically the file **`GOLD_XYZ_OSC.0001_1024.hdf5`**, which can be found [here](https://www.kaggle.com/datasets/pinxau1000/radioml2018).
+2. Run `data_preprocessing.py`, located in the `data_set_preprocessing` directory.
+3. Run `RF_fingerprints.ipynb`.
+
 
 # Prerequisites
 |Library         | Version |
