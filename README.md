@@ -27,7 +27,9 @@ This task explores the application of transformer models to the identification o
 - Fully Connected Layer
 - Dropout Layer
 - fully connected + Softmax
-  
+
+  ![image](https://github.com/user-attachments/assets/5054246b-cc0e-4806-a8fb-90eb539aad12)
+ 
 # Results
 
 
