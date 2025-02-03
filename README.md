@@ -7,10 +7,13 @@
 4. [Wavelets](#wavelets)
 5. [Dataset](#dataset)
 6. [Experimental Setup](#experimental-setup) <br>
-7. [Results](#results)
-8. [Conclusions](#conclusions)
-9. [Prerequisites](#prerequisites) 
-10. [References](#references)
+7. [Results](#results) <br>
+   7.1. [Confusion Matrix](#confusion-matrix) <br>
+   7.2. [Modulation Accuracy](#modulation-accuracy) <br>
+   7.3. [SNR Accuracy](#snr-accuracy) <br>
+9. [Conclusions](#conclusions)
+10. [Prerequisites](#prerequisites) 
+11. [References](#references)
 
 
 ## Introduction
@@ -83,12 +86,14 @@ The model wasn't trained on the entire dataset due to hardware limitations. The 
 - Learning Rate: 1e-4 (decay during running) 
  
 ## Results
+
+### Confusion Matrix
 ![image](https://github.com/user-attachments/assets/d05086c8-373c-4fe8-baa3-b414d1dabbe0)
 
-### Modulation accuracy
+### Modulation Accuracy
 ![image](https://github.com/user-attachments/assets/31adf0e4-1cbb-42b4-9621-4c6e4be41709)
 
-### SNR accuracy
+### SNR Accuracy
 ![image](https://github.com/user-attachments/assets/164ebeb2-30c3-45fa-8d5d-ce2136408e60)
 
 
@@ -97,7 +102,7 @@ The model wasn't trained on the entire dataset due to hardware limitations. The 
 - Wavelet's transform can improve the accuracy in low SNR.
 - Transform can get better accuracy for both low and high SNR.
 
-## Run the Model
+## Run The Model
 
 1. Download the dataset **DEEPSIG DATASET: RADIOML 2018.01A (NEW)**, specifically the file **`GOLD_XYZ_OSC.0001_1024.hdf5`**, which can be found [here](https://www.kaggle.com/datasets/pinxau1000/radioml2018).
 2. Run `data_preprocessing.py`, located in the `data_set_preprocessing` directory.
