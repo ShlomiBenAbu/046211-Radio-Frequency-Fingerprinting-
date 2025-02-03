@@ -118,6 +118,8 @@ The model wasn't trained on the entire dataset due to hardware limitations. The 
 2. Run `data_preprocessing.py`, located in the `data_set_preprocessing` directory.
 3. Run `RF_fingerprints.ipynb`.
 
+** You can also load the model with `model = torch.load("model/Rf-fingerprints-model-weight.pth", map_location=device)`
+
 
 ## Prerequisites
 
