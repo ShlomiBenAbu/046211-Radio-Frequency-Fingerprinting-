@@ -9,9 +9,9 @@ This task explores the application of transformer models to the identification o
 # Goals
 <img src="https://github.com/alexivaner/Deep-Learning-Based-Radio-Signal-Classification/raw/main/Submission/Final/Kinds%20of%20Signal.png" width="500"><br>
 
-* Classify 24 kinds of signal and get higher accuracy in lower SNR value.
-* Design a new deep learning architecture and try to get the comparable results in terms of accuracy with state of the art or even better.
-* Create End-to-end Deep Learning Model System (using only RAW signal).
+* Achieve well performance for low SNR. 
+* Get comparable results in terms of accuracy with state of the art or even better.
+* End-to-end Deep Learning Model System.
 
 **24 Kinds of signals** <br>
 '32PSK', '16APSK', '32QAM', 'FM', 'GMSK', '32APSK', 'OQPSK', '8ASK', 'BPSK', '8PSK', 'AM-SSB-SC', '4ASK', '16PSK', '64APSK', '128QAM', '128APSK','AM-DSB-SC', 'AM-SSB-WC', '64QAM', 'QPSK', '256QAM', 'AM-DSB-WC', 'OOK', '16QAM'
