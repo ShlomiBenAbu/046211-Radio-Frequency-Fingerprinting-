@@ -92,22 +92,24 @@ The model wasn't trained on the entire dataset due to hardware limitations. The 
 ## Results
 
 ### Confusion Matrix
+
 ![image](https://github.com/user-attachments/assets/d05086c8-373c-4fe8-baa3-b414d1dabbe0)
 
 ### Modulation Accuracy
-![image](https://github.com/user-attachments/assets/31adf0e4-1cbb-42b4-9621-4c6e4be41709)
+
+![image](https://github.com/user-attachments/assets/b00da38b-97b5-49f7-af30-ba9189d89ff4)
+
 
 ### SNR Accuracy
 
 ![image](https://github.com/user-attachments/assets/f9cea8e8-330a-4c3d-b06a-6557411b4ea6)
 
 
-
 ## Conclusions
 
-- Transformer-based RF fingerprinting 	enhances 	accuracy in low SNR.
-- Wavelet's transform can improve the accuracy in low SNR.
-- Transform can get better accuracy for both low and high SNR.
+1. Transformer-based model RF enhances fingerprinting accuracy in low SNR.
+2. Wavelet's transform can improve the accuracy of transformer-based model.
+
 
 ## Run The Model
 
