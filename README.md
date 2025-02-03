@@ -113,7 +113,7 @@ The model wasn't trained on the entire dataset due to hardware limitations. The 
 
 ## Run The Model
 
-1. From the link in [dataset](#dataset) section download the file **`GOLD_XYZ_OSC.0001_1024.hdf5`**.
+1. From the link in [dataset](#dataset) section download the file **`GOLD_XYZ_OSC.0001_1024.hdf5`** into directory named 'dataset'.
 2. Run `data_preprocessing.py`, located in the `data_set_preprocessing` directory.
 3. Run `RF_fingerprints.ipynb`.
 
@@ -129,7 +129,7 @@ The model wasn't trained on the entire dataset due to hardware limitations. The 
 |`scikit-learn`| `1.6.1`|
 |`h5py`| `3.12.1`|
 |`seaborn`| `0.13.2` |
-|`pywt`| `2.2.2` |
+|`PyWavelets`| `1.4.1` |
 
 ## References
 
