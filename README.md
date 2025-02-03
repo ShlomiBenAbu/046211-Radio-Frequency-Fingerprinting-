@@ -41,11 +41,13 @@ Wavelets are mathematical functions used to analyze and process signals at diffe
 
 Unlike Fourier transforms, which break signals into sine and cosine components (which have infinite support), wavelet transforms use localized basis functions that adapt to the signal’s structure. This makes wavelets particularly effective in analyzing non-stationary signals, such as images, audio, or time-series data.
 
-- Feature Extraction
+There are some advantages using wavelets
+
+1. Feature Extraction
    - Wavelets help in extracting multi-scale features, capturing both fine details and coarse structures in images, audio,        time-series data.
-- Noise Reduction
+2. Noise Reduction
    - applying a wavelet transform, high-frequency noise can be separated from useful features.
-- Improved Generalization
+3. Improved Generalization
    - Models trained on wavelet-transformed data often generalize better as wavelets help in reducing overfitting by focusing      on essential features.
 ![image](https://github.com/user-attachments/assets/3f4b51ff-6042-42ba-a361-cf73e4bcfc9e)
 
@@ -67,5 +69,11 @@ Unlike Fourier transforms, which break signals into sine and cosine components (
 |`seaborn`| `0.13.2` |
 |`pywt`| `2.2.2` |
 
+# References
+<pre>
+https://github.com/alexivaner/Deep-Learning-Based-Radio-Signal-Classification <br>
 
+Lu, Q., Yang, Z., Zhang, H., Chen, F., Xian, H.: Mrfe: a deep learning based multidimensional radio frequency fingerprinting enhancement approach for iot device identification. IEEE Internet Things J. (2024). https://doi.org/10.1109/JIOT.2024.3414195 <br>
+
+</pre>
 
