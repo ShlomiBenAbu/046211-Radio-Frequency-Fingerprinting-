@@ -51,6 +51,7 @@ This task explores the application of transformer models to the identification o
 |`scikit-learn`| `1.6.1`|
 |`h5py`| `3.12.1`|
 |`seaborn`| `0.13.2` |
+|`pywt`| `2.2.2` |
 
 
 
