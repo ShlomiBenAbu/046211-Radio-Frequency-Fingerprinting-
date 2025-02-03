@@ -83,9 +83,19 @@ The model wasn't trained on the entire dataset due to hardware limitations. The 
 - Learning Rate: 1e-4 (decay during running) 
  
 ## Results
+![image](https://github.com/user-attachments/assets/d05086c8-373c-4fe8-baa3-b414d1dabbe0)
+
+### Modulation accuracy
+![image](https://github.com/user-attachments/assets/31adf0e4-1cbb-42b4-9621-4c6e4be41709)
+
+### SNR accuracy
+![image](https://github.com/user-attachments/assets/164ebeb2-30c3-45fa-8d5d-ce2136408e60)
+
 
 ## Conclusions
-
+- Transformer-based RF fingerprinting 	enhances 	accuracy in low SNR.
+- Wavelet's transform can improve the accuracy in low SNR.
+- Transform can get better accuracy for both low and high SNR.
 
 ## Run the Model
 
