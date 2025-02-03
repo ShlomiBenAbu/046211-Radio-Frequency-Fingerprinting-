@@ -1,12 +1,26 @@
-# 046211-Radio-Frequency-Fingerprinting
-# Introduction
+<h1 align="center"> 046211-Radio-Frequency-Fingerprinting</h1> 
+
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Goals](#goals)
+3. [Model architecture](#model-architecture) <br>
+4. [Wavelets](#wavelets)
+5. [Results](#results)
+6. [Conclusions](#conclusions)
+8. [Prerequisites](#prerequisites) 
+7. [References](#references)
+
+
+## Introduction
+
 In the domain of wireless communications, the identification of devices based on their unique Radio Frequency (RF) fingerprints has emerged as a critical tool for enhancing network security, device authentication, and spectrum management. RF fingerprints arise due to hardware imperfections inherent in the manufacturing process of wireless devices. These imperfections introduce subtle, device-specific variations in transmitted signals, which can be leveraged for identification purposes.
 
 However, detecting and classifying RF fingerprints becomes significantly challenging in low Signal-to-Noise Ratio (SNR) environments. Low SNR conditions often arise due to factors such as distance, interference, or environmental noise, which obscure the distinctive features of RF signals and complicate the identification process.
 
 This task explores the application of transformer models to the identification of RF fingerprints in low SNR environments. By leveraging the ability of transformers to extract robust and meaningful features from complex data, this approach aims to improve the reliability and accuracy of RF fingerprinting in adverse scenarios. The work also highlights the potential of combining advanced signal processing techniques with deep learning frameworks to address practical challenges in wireless communications.
 
-# Goals
+## Goals
+
 <img src="https://github.com/alexivaner/Deep-Learning-Based-Radio-Signal-Classification/raw/main/Submission/Final/Kinds%20of%20Signal.png" width="500"><br>
 
 * Achieve well performance for low SNR. 
@@ -16,7 +30,8 @@ This task explores the application of transformer models to the identification o
 **24 Kinds of signals** <br>
 '32PSK', '16APSK', '32QAM', 'FM', 'GMSK', '32APSK', 'OQPSK', '8ASK', 'BPSK', '8PSK', 'AM-SSB-SC', '4ASK', '16PSK', '64APSK', '128QAM', '128APSK','AM-DSB-SC', 'AM-SSB-WC', '64QAM', 'QPSK', '256QAM', 'AM-DSB-WC', 'OOK', '16QAM'
 
-# Model architecture
+## Model architecture
+
 - Fully Connected
 - Transformer Block
 - Average Pooling 
@@ -30,13 +45,7 @@ This task explores the application of transformer models to the identification o
 
 ![image](https://github.com/user-attachments/assets/05292164-a4de-4492-8d77-b21b39fdecbb)
 
-
- 
-# Results
-
-# Conclusion 
-
-# Wavelets
+## Wavelets
 Wavelets are mathematical functions used to analyze and process signals at different scales and resolutions. They are particularly useful for decomposing a signal into different frequency components while preserving spatial (or temporal) information.
 
 Unlike Fourier transforms, which break signals into sine and cosine components (which have infinite support), wavelet transforms use localized basis functions that adapt to the signal’s structure. This makes wavelets particularly effective in analyzing non-stationary signals, such as images, audio, or time-series data.
@@ -51,13 +60,22 @@ There are some advantages using wavelets
    - Models trained on wavelet-transformed data often generalize better as wavelets help in reducing overfitting by focusing      on essential features.
 ![image](https://github.com/user-attachments/assets/3f4b51ff-6042-42ba-a361-cf73e4bcfc9e)
 
-# Run the Model
+
+ 
+## Results
+
+## Conclusions
+
+
+## Run the Model
+
 1. Download the dataset **DEEPSIG DATASET: RADIOML 2018.01A (NEW)**, specifically the file **`GOLD_XYZ_OSC.0001_1024.hdf5`**, which can be found [here](https://www.kaggle.com/datasets/pinxau1000/radioml2018).
 2. Run `data_preprocessing.py`, located in the `data_set_preprocessing` directory.
 3. Run `RF_fingerprints.ipynb`.
 
 
-# Prerequisites
+## Prerequisites
+
 |Library         | Version |
 |--------------------|----|
 |`Python`| `3.13.1`|
@@ -69,11 +87,10 @@ There are some advantages using wavelets
 |`seaborn`| `0.13.2` |
 |`pywt`| `2.2.2` |
 
-# References
-<pre>
-https://github.com/alexivaner/Deep-Learning-Based-Radio-Signal-Classification <br>
+## References
 
-Lu, Q., Yang, Z., Zhang, H., Chen, F., Xian, H.: Mrfe: a deep learning based multidimensional radio frequency fingerprinting enhancement approach for iot device identification. IEEE Internet Things J. (2024). https://doi.org/10.1109/JIOT.2024.3414195 <br>
+* Farhan Tandia, Ivan Surya Hutomo: https://github.com/alexivaner/Deep-Learning-Based-Radio-Signal-Classification
 
-</pre>
+* Lu, Q., Yang, Z., Zhang, H., Chen, F., Xian, H.: Mrfe: a deep learning based multidimensional radio frequency fingerprinting enhancement approach for iot device identification. IEEE Internet Things J. (2024). https://doi.org/10.1109/JIOT.2024.3414195 <br>
+
 
