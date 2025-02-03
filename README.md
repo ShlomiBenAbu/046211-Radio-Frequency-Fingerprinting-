@@ -87,7 +87,8 @@ The model wasn't trained on the entire dataset due to hardware limitations. The 
 - Training Dataset Size: 112,000 frames
 - Validation Dataset Size: 28,000 frames
 - Batch Size: 4096
-- Learning Rate: 1e-4 (decay during training) 
+- Learning Rate: 1e-4 (decay during training)
+- Num of epochs: ~500 epochs (we trained in parts)
  
 ## Results
 
