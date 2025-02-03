@@ -36,6 +36,19 @@ This task explores the application of transformer models to the identification o
 
 # Conclusion 
 
+# Wavelets
+Wavelets are mathematical functions used to analyze and process signals at different scales and resolutions. They are particularly useful for decomposing a signal into different frequency components while preserving spatial (or temporal) information.
+
+Unlike Fourier transforms, which break signals into sine and cosine components (which have infinite support), wavelet transforms use localized basis functions that adapt to the signal’s structure. This makes wavelets particularly effective in analyzing non-stationary signals, such as images, audio, or time-series data.
+
+- Feature Extraction
+   - Wavelets help in extracting multi-scale features, capturing both fine details and coarse structures in images, audio,        time-series data.
+- Noise Reduction
+   - applying a wavelet transform, high-frequency noise can be separated from useful features.
+- Improved Generalization
+   - Models trained on wavelet-transformed data often generalize better as wavelets help in reducing overfitting by focusing      on essential features.
+![image](https://github.com/user-attachments/assets/3f4b51ff-6042-42ba-a361-cf73e4bcfc9e)
+
 # Run the Model
 1. Download the dataset **DEEPSIG DATASET: RADIOML 2018.01A (NEW)**, specifically the file **`GOLD_XYZ_OSC.0001_1024.hdf5`**, which can be found [here](https://www.kaggle.com/datasets/pinxau1000/radioml2018).
 2. Run `data_preprocessing.py`, located in the `data_set_preprocessing` directory.
