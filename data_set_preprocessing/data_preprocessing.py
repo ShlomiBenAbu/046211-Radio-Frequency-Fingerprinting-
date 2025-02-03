@@ -3,18 +3,20 @@ import os
 import numpy as np
 import h5py
 
+
 ##############################全局参数#######################################
-f = h5py.File(r'dataset\GOLD_XYZ_OSC.0001_1024.hdf5','r')
-dir_path = r'ExtractDataset'
+f = h5py.File(r'..\dataset\GOLD_XYZ_OSC.0001_1024.hdf5','r')
+dir_path = r'..\ExtractDataset'
 if os.path.exists(dir_path):
     # Remove the directory
     shutil.rmtree(dir_path)
     print(f"Deleted: {dir_path}")
     # Recreate the directory
-    os.mkdir(dir_path)
+os.mkdir(dir_path)
 modu_snr_size = 1200
 ############################################################################
 
+# Split the dataset to files per modulation
 for modu in range(24):
 	X_list = []
 	Y_list = []
