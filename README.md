@@ -5,10 +5,12 @@
 2. [Goals](#goals)
 3. [Model architecture](#model-architecture) <br>
 4. [Wavelets](#wavelets)
-5. [Results](#results)
-6. [Conclusions](#conclusions)
-8. [Prerequisites](#prerequisites) 
-7. [References](#references)
+5. [Dataset](#dataset)
+6. [Experimental Setup](#experimental-setup) <br>
+7. [Results](#results)
+8. [Conclusions](#conclusions)
+9. [Prerequisites](#prerequisites) 
+10. [References](#references)
 
 
 ## Introduction
@@ -60,7 +62,24 @@ There are some advantages using wavelets
    - Models trained on wavelet-transformed data often generalize better as wavelets help in reducing overfitting by focusing      on essential features.
 ![image](https://github.com/user-attachments/assets/3f4b51ff-6042-42ba-a361-cf73e4bcfc9e)
 
+## Dataset
 
+The experiments were conducted using the RADIOML 2018.01A dataset [1], which contains 24 different RF signal modulations. 
+The dataset exhibits the following structure:
+•	24 modulations: OOK, ASK4, ASK8, BPSK, QPSK, PSK8, PSK16, PSK32, APSK16, APSK32, APSK64, APSK128, QAM16, QAM32, QAM64, QAM128, QAM256, AM_SSB_WC, AM_SSB_SC, AM_DSB_WC, AM_DSB_SC, FM, GMSK and OQPS.
+•	26 SNRs per modulation (-20 dB to +30 dB in steps of 2dB).
+•	4096 frames per modulation-SNR combination.
+•	1024 complex time-series samples per frame.
+•	Samples as floating point in-phase and quadrature (I/Q) components, resulting in a (1024,2) frame shape.
+2,555,904 frames in total.
+
+## Experimental Setup
+
+The model was trained in a high-performance computing environment with the following settings:
+- Training Dataset Size: 112,000
+- Validation Dataset Size: 28,000
+- Batch Size: 4096
+- Learning Rate: 1e-4 (decay during running) 
  
 ## Results
 
